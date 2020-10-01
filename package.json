@@ -10,7 +10,7 @@
   "author": "Luke Phillips",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.5",
+    "bcrypt": "^5.0.0",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
