@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" href="data:;base64,iVBORw0KGgo=">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="joinCreateHousehold.js"></script>
+	<link rel="stylesheet" type="text/css" href="">
+	<title>Join or Create a Household</title>
+</head>
+<body>
+	<div>
+		<form id='joinHouseholdForm'>
+			<h1>Join an Existing Household</h1>
+			<label>Household Code:<br/>
+				<input type="text" id="code">
+			</label><br/><br/>
+			<button id='joinHousehold' onclick='join()'>
+				Join Household
+			</button>
+		</form>
+
+		<form id='createHouseholdForm' style='display: none;'>
+			<h1>Create a New Household</h1>
+			<label>Name Your Household:<br/>
+				<input type="text" id="createName">
+			</label><br/>
+			<label>Create a Household Code:<br/>
+				<input type="password" id="createCode">
+			</label><br/><br/>
+			<button id='createHousehold' onclick='create()'>
+				Create Household
+			</button>
+		</form>
+
+		<p id='status'></p>
+
+		<p id='createHouseholdLink'>Or
+			<a href='#'
+				onclick='showCreateHousehold()'>
+					Create a New Household
+			</a>
+		</p>
+
+		<p id='joinHouseholdLink'
+			style='display: none;'>Or
+			<a href='#'
+				onclick='showJoinHousehold()'>
+					Join an Existing Household
+			</a>
+		</p>
+	</div>
+</body>
+</html>

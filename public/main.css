@@ -1,0 +1,28 @@
+table{
+	border: solid;
+	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
+}
+
+td, th{
+	border: solid;
+	/*width: 20%;*/
+}
+
+td > button{
+	width: 100%;
+	height: 25px;
+}
+
+@keyframes longPress{
+	0% {background-color: white;}
+	100% {background-color: blue;}
+}
+
+.longPress {
+	background-color: white;
+	animation-name: longPress;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}

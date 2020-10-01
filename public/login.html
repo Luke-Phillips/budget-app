@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" href="data:;base64,iVBORw0KGgo=">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="login.js"></script>
+	<link rel="stylesheet" type="text/css" href="">
+	<title>Login</title>
+</head>
+	<div>
+		<form id='loginForm'>
+			<label>Username:<br/>
+				<input type="text" id="loginUsername">
+			</label><br/>
+			<label>Password:<br/>
+				<input type="password" id="loginPassword">
+			</label><br/><br/>
+			<button onclick="login()">Login</button>
+		</form>
+
+		<form id='createAccountForm' style='display: none;'>
+			<label>Create a Username:<br/>
+				<input type="text" id="createUsername">
+			</label><br/>
+			<label>Create a Password:<br/>
+				<input type="password" id="createPassword">
+			</label><br/>
+			<label>Confirm Your Password:<br/>
+				<input type="password" id="confirmPassword">
+			</label><br/>
+			<label>What do your roommates call you?<br/>
+				<input type="text" id="name">
+			</label><br/><br/>
+			<button onclick="createAccount()">
+				Create Your Account
+			</button>
+		</form>
+
+		<p id='status'></p>
+
+		<p id='createAccountLink'>Don't have an account?
+			<a href='#'
+				onclick='showCreateAccount()'>
+					Create an Account
+			</a>
+		</p>
+
+		<p id='loginLink'
+			style='display: none;'>Already have an account?
+			<a href='#'
+				onclick='showLogin()'>
+					Log In
+			</a>
+		</p>
+	</div>
+<body>
+</body>
+</html>

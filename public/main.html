@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" href="data:;base64,iVBORw0KGgo=">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Roommate Responsibility Tracker</title>
+</head>
+<body onload="loadPage()">
+	<header>
+		<div id="header">
+			<h1 id="h_name"></h1>
+			<h2 id="r_name"></h2>
+		</div>
+	</header>
+
+	<table id="table"></table><br/><br/>
+	<div id='addTaskDiv'>
+		<label>Add a new task:<br/>
+			<input id="newTask" type="text"><br/>
+		</label><br/>
+		<button onclick='addTask()'>Add Task</button>
+	</div>
+	<h2 id='loadMsg' style='display: none;'>Adding Task</h2>
+</body>
+</html>
