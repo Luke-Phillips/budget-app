@@ -205,9 +205,3 @@ function addTask(){
 /*function test(testParam){
 	console.log(`test: ${testParam}`);
 }*/
-
-// cool lesson learned about closure issues
-// button.onclick = (function(){
-// 	incTask(local_row_num, local_col_num, local_timesDone);
-// });
-
